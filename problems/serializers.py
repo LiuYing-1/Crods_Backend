@@ -20,3 +20,15 @@ class ProblemSerializer(serializers.ModelSerializer):
             'get_thumbnail',
             'date_posted',
         )
+        
+class TagSerializer(serializers.ModelSerializer):
+    problems = ProblemSerializer(many=True)
+    
+    class Meta:
+        model = Tag
+        fields = (
+            "id",
+            "name",
+            "get_absolute_url",
+            "problems",
+        )

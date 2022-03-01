@@ -3,13 +3,13 @@ from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
-from .models import Problem, User
-from .serializers import ProblemSerializer
+from .models import Problem, User, Tag
+from .serializers import ProblemSerializer, TagSerializer
 # Create your views here.
 
 class LatestProblemsList(APIView):
     def get(self, request, format=None):
-        problems = Problem.objects.all()[:10]
+        problems = Problem.objects.all()[:12]
         serializer = ProblemSerializer(problems, many=True)
         return Response(serializer.data)
     
@@ -23,4 +23,16 @@ class ProblemDetail(APIView):
     def get(self, request, tag_slug, problem_slug, format=None):
         problem = self.get_object(tag_slug, problem_slug)
         serializer = ProblemSerializer(problem)
+        return Response(serializer.data)
+    
+class TagDetail(APIView):
+    def get_object(self, tag_slug):
+        try:
+            return Tag.objects.get(slug=tag_slug)
+        except Tag.DoesNotExist:
+            raise Http404
+    
+    def get(self, request, tag_slug, format=None):
+        tag = self.get_object(tag_slug)
+        serializer = TagSerializer(tag)
         return Response(serializer.data)

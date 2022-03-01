@@ -1,9 +1,13 @@
 from django.shortcuts import render
+from django.http import Http404
 
 from django.contrib.auth.models import User
 from rest_framework.authtoken.views import APIView, AuthTokenSerializer
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
+from .models import UserInfo
+
+from .serializers import UserInfoSerializer
 
 # User Register
 class Register(APIView):
@@ -43,3 +47,17 @@ class Login(APIView):
             'user_id': user.pk,
             'user_name': user.username,
         })
+        
+
+# User Information
+class UserInfoDetail(APIView):   
+    def get_object(self, user_id):
+        try:
+            return UserInfo.objects.filter(user__id=user_id).get()
+        except:
+            raise Http404
+        
+    def get(self, request, user_id, format=None):
+        user_info = UserInfo.objects.get(user_id = user_id)
+        serializer = UserInfoSerializer(user_info)
+        return Response(serializer.data)
