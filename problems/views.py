@@ -1,7 +1,9 @@
+from django.db.models import Q
 from django.http import Http404
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework.decorators import api_view
 
 from .models import Problem, User, Tag
 from .serializers import ProblemSerializer, TagSerializer
@@ -36,3 +38,27 @@ class TagDetail(APIView):
         tag = self.get_object(tag_slug)
         serializer = TagSerializer(tag)
         return Response(serializer.data)
+    
+class ProblemsByStatus(APIView):
+    def get_object(self, status):
+        try:
+            return Problem.objects.filter(status=status)
+        except Problem.DoesNotExist:
+            raise Http404
+    
+    def get(self, request, status, format=None):
+        problems = self.get_object(status)
+        serializer = ProblemSerializer(problems, many=True)
+        return Response(serializer.data)
+    
+
+@api_view(['POST'])
+def search(request):
+    query = request.data.get('query', '')
+    
+    if query:
+        problems = Problem.objects.filter(Q(name__icontains=query) | Q(description__icontains=query))
+        serializer = ProblemSerializer(problems, many=True)
+        return Response(serializer.data)
+    else:
+        return Response({"problems": []})
