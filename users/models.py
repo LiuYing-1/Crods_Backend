@@ -17,3 +17,15 @@ class UserInfo(models.Model):
     
     def get_absolute_url(self):
         return f'/users/{self.user.id}/'
+    
+    def get_user_simple_data(self):
+        username = self.user.username
+        password = self.user.password
+        email = self.user.email
+        
+        user_simple_data = {
+            "username": username,
+            "password": password,
+            "email": email,
+        }
+        return user_simple_data

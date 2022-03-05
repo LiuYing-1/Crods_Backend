@@ -13,4 +13,5 @@ class UserInfoSerializer(serializers.ModelSerializer):
             'balance',
             'reputation',
             'get_absolute_url',
+            'get_user_simple_data',
         )

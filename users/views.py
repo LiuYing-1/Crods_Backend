@@ -8,6 +8,7 @@ from rest_framework.response import Response
 from .models import UserInfo
 
 from .serializers import UserInfoSerializer
+from problems.serializers import ProblemSerializer
 
 # User Register
 class Register(APIView):
@@ -22,6 +23,10 @@ class Register(APIView):
             }
         else:
             user = User.objects.create_user(username = username, password = password)
+            
+            userinfo = UserInfo(user = user)
+            userinfo.save()
+                        
             token, created = Token.objects.get_or_create(user = user)
             resp = {
                 'status': True,
@@ -60,4 +65,44 @@ class UserInfoDetail(APIView):
     def get(self, request, user_id, format=None):
         user_info = UserInfo.objects.get(user_id = user_id)
         serializer = UserInfoSerializer(user_info)
+        return Response(serializer.data)
+    
+# User Email Update
+class EmailUpdate(APIView):
+    def get_object(self, user_id):
+        try:
+            return User.objects.get(id=user_id)
+        except:
+            raise Http404
+    
+    def put(self, request, user_id, format=None):
+        user = self.get_object(user_id)
+        
+        if (user.email == request.data.get('email')): 
+            status = False
+            message = 'Please do not use the same email address'
+        else:
+            user.email = request.data.get('email')
+            user.save()
+            status = True
+            message = 'Email updated successfully'
+            user.save()
+        
+        return Response({
+            'status': status,
+            'message': message,
+        })
+
+# Collected User Posted Problems
+class UserPostedProblems(APIView):
+    def get_object(self, user_id):
+        try:
+            return User.objects.get(id=user_id)
+        except:
+            raise Http404
+        
+    def get(self, request, user_id, format=None):
+        user = self.get_object(user_id)
+        problems = user.problems.all()
+        serializer = ProblemSerializer(problems, many=True)
         return Response(serializer.data)
