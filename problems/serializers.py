@@ -32,3 +32,18 @@ class TagSerializer(serializers.ModelSerializer):
             "get_absolute_url",
             "problems",
         )
+    
+class PostNewProblemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Problem
+        fields = (
+            "tag",
+            "user",
+            "name",
+            "slug",
+            "description",
+            "details",
+            "budget",
+            "deadline",
+            "image",
+        )
