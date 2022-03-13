@@ -1,4 +1,4 @@
-from ast import Return
+import datetime
 from django.db.models import Q
 from django.http import Http404
 
@@ -102,6 +102,36 @@ class PostNewProblem(APIView):
         return Response(serializer.errors, status=400)
 
 
+# Update Problem
+class problemUpdate(APIView):
+    def get_object(self, problem_id):
+        try:
+            return Problem.objects.get(id=problem_id)
+        except Problem.DoesNotExist:
+            raise Http404
+        
+    def put(self, request, problem_id, format=None):
+        problem = self.get_object(problem_id)
+        
+        problem.deadline = datetime.datetime.strptime(request.data.get('deadline'), "%Y-%m-%d")
+        
+        now = datetime.datetime.now()
+        
+        # Condition 1 - Deadline cannot be in the past
+        if (problem.deadline < now):
+            return Response({'status':400, 'message':'Please Reset the Deadline'})
+        
+        # Condition 2 - The problem cannot be updated when the status is not 'Unaccepted'
+        if (problem.status != 0):
+            return Response({'status':400, 'message':'Cannot Update the Problem'})
+                    
+        serializer = ProblemSerializer(problem, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response({'status':200, 'message':'Problem Successfully Updated'})
+        return Response(serializer.errors, status=400)
+
+# Search Problems
 @api_view(['POST'])
 def search(request):
     query = request.data.get('query', '')
