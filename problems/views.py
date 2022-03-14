@@ -8,7 +8,7 @@ from rest_framework.decorators import api_view
 
 from .models import Problem, User, Tag
 from users.models import UserInfo
-from .serializers import ProblemSerializer, TagSerializer, PostNewProblemSerializer
+from .serializers import ProblemSerializer, TagSerializer, PostNewProblemSerializer, UpdateProblemSerializer
 # Create your views here.
 
 class LatestProblemsList(APIView):
@@ -112,11 +112,28 @@ class problemUpdate(APIView):
         
     def put(self, request, problem_id, format=None):
         problem = self.get_object(problem_id)
+          
+        problem.name = request.data.get('name')
         
+        # Process the Tag of the problem
+        newTagName = request.data.get('get_tagname')
+        problem.tag = Tag.objects.get(name=newTagName)
+        
+        # Process the Slug
+        if (' ' in problem.name):
+            tempt = problem.name.strip()
+        tempt = tempt.lower()
+        problem.slug = tempt.replace(' ', '-')
+        
+        # Process the deadline
         problem.deadline = datetime.datetime.strptime(request.data.get('deadline'), "%Y-%m-%d")
-        
         now = datetime.datetime.now()
         
+        # Get the rest information
+        problem.budget = request.data.get('budget')
+        problem.description = request.data.get('description')
+        problem.details = request.data.get('details')
+
         # Condition 1 - Deadline cannot be in the past
         if (problem.deadline < now):
             return Response({'status':400, 'message':'Please Reset the Deadline'})
@@ -125,11 +142,26 @@ class problemUpdate(APIView):
         if (problem.status != 0):
             return Response({'status':400, 'message':'Cannot Update the Problem'})
                     
-        serializer = ProblemSerializer(problem, data=request.data)
+        
+        # Form the data for the serializer
+        updatedData = {
+            "id": problem.id,
+            "name": problem.name,
+            "tag": problem.tag.id,
+            "slug": problem.slug,
+            "description": problem.description,      
+            "details": problem.details,
+            "budget": problem.budget,
+            "deadline": problem.deadline,      
+        }                
+    
+        # Serialize the data
+        serializer = UpdateProblemSerializer(problem, data=updatedData)
         if serializer.is_valid():
             serializer.save()
-            return Response({'status':200, 'message':'Problem Successfully Updated'})
+            return Response({'status':200, 'message':'Problem Successfully Updated', 'problem':serializer.data})
         return Response(serializer.errors, status=400)
+
 
 # Search Problems
 @api_view(['POST'])
@@ -137,7 +169,7 @@ def search(request):
     query = request.data.get('query', '')
     
     if query:
-        problems = Problem.objects.filter(Q(name__icontains=query) | Q(description__icontains=query))
+        problems = Problem.objects.filter(Q(name__icontains=query) | Q(description__icontains=query) | Q(tag__name__icontains=query))
         serializer = ProblemSerializer(problems, many=True)
         return Response(serializer.data)
     else:
