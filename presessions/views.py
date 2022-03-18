@@ -6,11 +6,12 @@ from rest_framework.response import Response
 from presessions.models import Presession
 from problems.models import Problem
 from users.models import UserInfo
+from solutions.models import Solution
 from django.contrib.auth.models import User
 
 from datetime import datetime
 
-from presessions.serializers import PresessionSerializer, PostNewPresessionSerializer
+from presessions.serializers import PresessionSerializer, PostNewPresessionSerializer, UpdatePresessionSerializer
 
 # Create your views here.
 # GET All Presessions
@@ -66,3 +67,77 @@ class PostNewPresession(APIView):
         presession.save()
         # Return the Presession
         return Response({'presession': PostNewPresessionSerializer(presession).data, 'status': 201})
+
+class GetPresessionByID(APIView):
+    def get(self, request, presession_id, format=None):
+        presession = Presession.objects.get(id=presession_id)
+        serializer = PresessionSerializer(presession)
+        return Response(serializer.data)
+    
+    
+class UpdatePresession(APIView):
+    def put(self, request, presession_id, format=None):
+        presession = Presession.objects.get(id=presession_id)
+        
+        # Update the Result
+        presession.result = request.data['result']
+        # Get the Reason
+        reason = request.data['reason']
+        
+        # Limit the Picker do not pick problem more than one.
+        pickerinfo = UserInfo.objects.filter(user=presession.user)[0]
+        if (pickerinfo.is_busy == True and  presession.result == 1):
+            return Response({'message': "Sorry, this user has already picked a problem currently.", 'status':400})
+        else:
+            # Update the default reason
+            if (reason == "Waiting for the decision."):
+                if (presession.result == 1):
+                    reason = "Congratulations, your request has been accepted."
+                else:
+                    reason = "Sorry, your request has been rejected."
+            # Update the Reason
+            presession.reason = reason
+            presession.date_result = datetime.now()
+            
+            data = {
+                'id': presession.id,
+                'result': presession.result,
+                'reason': presession.reason,
+                'date_result': presession.date_result
+            }
+            
+            serializer = UpdatePresessionSerializer(presession, data=data)
+            if (serializer.is_valid()):
+                serializer.save()
+                
+                # Close the Audit Process
+                if (presession.result == 1):
+                    # Update the User Status to Busy
+                    pickerinfo = UserInfo.objects.filter(user=presession.user)[0]
+                    pickerinfo.is_busy = True
+                    pickerinfo.picks_num += 1
+                    pickerinfo.save()
+                    
+                    # Fee (temporary stored in the Platform)
+                    problem = Problem.objects.get(id=presession.problem.id)
+                    poster = User.objects.get(id=problem.user.id)
+                    posterinfo = UserInfo.objects.filter(user=poster)[0]
+                    posterinfo.balance -= problem.budget
+                    posterinfo.save()
+                    # Set Problem Status to In - Progress
+                    problem.status = 1
+                    problem.save()
+                    # Reject other Presessions of the same Problem
+                    rej_presessions = Presession.objects.filter(problem=presession.problem, result=0)
+                    for rej_pres in rej_presessions:
+                        rej_pres.result = 2
+                        rej_pres.reason = "Sorry, your request has been rejected."
+                        rej_pres.date_result = datetime.now()
+                        rej_pres.save()
+                    
+                    solution = Solution(presession=presession)
+                    solution.save()
+                    
+                return Response({'presession': serializer.data, 'status': 201, 'message': 'Updated Successfully.'})
+            else:
+                return Response({'presession': serializer.errors, 'status': 400})

@@ -23,7 +23,7 @@ class Presession(models.Model):
         ordering = ('-date_posted',)
     
     def __str__(self):
-        return f'{self.problem.slug}, {self.user.username}(picker)'
+        return f'presession {self.id}'
     
     def get_problem_name(self):
         return self.problem.name
@@ -31,6 +31,8 @@ class Presession(models.Model):
     def get_picker_name(self):
         return self.user.username
     
-    def get_absolute_url(self):
-        return f'/{self.problem.id}/{self.user.id}/'
-    
+    def get_problem_budget(self):
+        return self.problem.budget
+
+    def get_problem_absolute_url(self):
+        return self.problem.get_absolute_url()
