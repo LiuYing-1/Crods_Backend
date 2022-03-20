@@ -41,6 +41,11 @@ class PostNewPresession(APIView):
         
         # Limit the User do not submit repeatedly.
         if (Presession.objects.filter(user=user, problem=problem).exists()):
+            # Respond the User if he has sent the request before
+            if (Presession.objects.filter(user=user, problem=problem)[0].result == 1):
+                return Response({'message': 'Your request has already been accepted.', 'status':400})
+            if (Presession.objects.filter(user=user, problem=problem)[0].result == 2):
+                return Response({'message': 'Your request has already been rejected.', 'status':400})
             return Response({'message': 'Please do not submit repeatedly.', 'status':400})
         
         # Get the Motivation

@@ -11,5 +11,9 @@ class SolutionSerializer(serializers.ModelSerializer):
             'text_solution',
             'file_solution',
             'solution_result',
-            'get_presession',
+            
+            'get_presession_date',
+            'get_problem_name',
+            'get_problem_deadline',
+            'get_problem_absolute_url',
         )
