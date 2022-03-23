@@ -6,7 +6,9 @@ class Solution(models.Model):
     presession = models.ForeignKey(Presession, related_name='solution' , on_delete=models.CASCADE)
     text_solution = models.TextField(blank=True, null=True)
     file_solution = models.FileField(upload_to='solutions/', blank=True, null=True)
-    # 0 = Pending, 1 = Accepted, 2 = Rejected
+    notice = models.TextField(blank=True, null=True)
+    solution_feedback = models.TextField(blank=True, null=True)
+    # 0 = Pending, 1 = Submitted, 2 = Accepted, 3 = Rejected
     solution_result = models.IntegerField(default=0)
     
     def __str__(self):
@@ -23,4 +25,7 @@ class Solution(models.Model):
     
     def get_problem_absolute_url(self):
         return self.presession.problem.get_absolute_url()
+    
+    def get_username(self):
+        return self.presession.user.username
     
