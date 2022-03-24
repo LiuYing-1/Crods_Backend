@@ -35,12 +35,14 @@ class GetSolutionByProblemId(APIView):
         for presession in accepted_presessions:
             solutions.append(Solution.objects.get(presession=presession))
             
-        # Condition 2 - Check which one is in status
+        # Condition 2 - Check which one is in status -> The only condition is Max ID
+        ids = []
         for solution in solutions:
-            if solution.solution_result != 2 and solution.solution_result != 3:
-                return Response(SolutionSerializer(solution).data)
+            ids.append(solution.id)
+        solution_id = max(ids)
+        solution = Solution.objects.filter(id=solution_id)[0]
         
-        return Response({"message": "No suitable solution"})
+        return Response(SolutionSerializer(solution).data)
     
 class GetSolutionById(APIView):
     def get(self, request, solution_id):
