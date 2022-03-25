@@ -57,9 +57,18 @@ class PostNewDistribution(APIView):
             solution = solution,
             date_posted = date_posted,
             date_result = None,
-            result = 0
+            result = 0,
+            
+            picker_rating = picker_reputation,
         )
     
         distribution.save()
         
-        return Response({'distribution': PostNewDistributionSerializer(distribution).data, 'picker_rating': picker_reputation, 'status': 201})
+        return Response({'distribution': PostNewDistributionSerializer(distribution).data, 'status': 201})
+    
+# Get Distribution by ID
+class GetDistributionById(APIView):
+    def get(self, request, distribution_id):
+        distribution = Distribution.objects.get(id=distribution_id)
+        serializer = DistributionSerializer(distribution)
+        return Response(serializer.data)

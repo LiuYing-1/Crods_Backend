@@ -12,14 +12,20 @@ class Distribution(models.Model):
     # 0 = Pending, 1 = Completed
     result = models.IntegerField(default=0)
     
+    # Temp store Rating to Picker
+    picker_rating = models.IntegerField(default=0)
+    
     def __str__(self):
         return f'distribution {self.id}'
     
-    def get_problem_id(self):
-        return self.problem.id
+    def get_problem_name(self):
+        return self.problem.name
     
     def get_problem_budget(self):
         return self.problem.budget
     
-    def get_solution_id(self):
-        return self.solution.id
+    def get_poster_name(self):
+        return self.problem.user.username
+    
+    def get_problem_absolute_url(self):
+        return self.problem.get_absolute_url()

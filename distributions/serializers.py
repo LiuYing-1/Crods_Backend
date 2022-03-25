@@ -12,10 +12,11 @@ class DistributionSerializer(serializers.ModelSerializer):
             'date_posted', 
             'date_result', 
             'result',
-            
-            'get_problem_id',
+            'picker_rating',
+            'get_problem_name',
+            'get_poster_name',
             'get_problem_budget',
-            'get_solution_id',
+            'get_problem_absolute_url',
         )
 
 class PostNewDistributionSerializer(serializers.ModelSerializer):
@@ -27,4 +28,5 @@ class PostNewDistributionSerializer(serializers.ModelSerializer):
             'date_posted',
             'date_result',
             'result',
+            'picker_rating',
         )
