@@ -1,3 +1,4 @@
+from decimal import Decimal
 from datetime import datetime
 from django.shortcuts import render
 
@@ -72,3 +73,50 @@ class GetDistributionById(APIView):
         distribution = Distribution.objects.get(id=distribution_id)
         serializer = DistributionSerializer(distribution)
         return Response(serializer.data)
+    
+# Update Distribution by ID    
+class UpdateDistribution(APIView):
+    def put(self, request, distribution_id):
+        distribution = Distribution.objects.filter(id=distribution_id)[0]
+        
+        # Priority 1 - What about the Solution hasn't been done or Submitted later ? => If Rejected, money back to Poster (Latest Conclusion)
+        # Priority 2 - how to calculate the rating ?
+        
+        # Check whether the solution is done or not - Check whether it is rejected automatically or mannaually => To the same end (Priority 1)
+        # Condition - Text is not empty or not
+        solution = Solution.objects.filter(id=distribution.solution.id)[0]    
+        # Get Picker    
+        presession = Presession.objects.filter(id=solution.presession.id)[0]
+        picker = User.objects.filter(username=presession.user.username)[0]
+        picker_info = UserInfo.objects.filter(user=picker)[0]
+        # Get Poster
+        problem = Problem.objects.filter(id=distribution.problem.id)[0]
+        poster = User.objects.filter(username=problem.user.username)[0]
+        poster_info = UserInfo.objects.filter(user=poster)[0]
+        
+        # Automatically Rejected OR Manually Rejected
+        if (solution.text_solution == None):
+            # Refund the Poster => Only Automatically Rejected => 10% of the Budget to the Poster
+            poster_info.balance = (problem.budget * Decimal(1.1)) + poster_info.balance
+            picker_info.balance = picker_info.balance - (problem.budget * Decimal(0.1))
+        if ((solution.solution_result == 3) and solution.text_solution != None):
+            # Money Back to Poster
+            poster_info.balance += problem.budget
+        if (solution.solution_result == 2):
+            # Money Sent to Picker
+            picker_info.balance += problem.budget
+            
+        # Align Data to the Model
+        distribution.date_result = datetime.now()
+        # Only One Result - "Done"
+        distribution.result = 1
+
+        # Align the Rating to the Picker (Priority 2) - Accumulated Rating
+        picker_info.reputation += distribution.picker_rating
+        
+        # Save All
+        distribution.save()
+        picker_info.save()
+        poster_info.save()
+        
+        return Response({'distribution': DistributionSerializer(distribution).data, 'status': 201})

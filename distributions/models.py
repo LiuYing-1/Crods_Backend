@@ -15,6 +15,9 @@ class Distribution(models.Model):
     # Temp store Rating to Picker
     picker_rating = models.IntegerField(default=0)
     
+    class Meta:
+        ordering = ('-date_posted',)
+    
     def __str__(self):
         return f'distribution {self.id}'
     

@@ -7,6 +7,8 @@ urlpatterns = [
     path('all-distributions/', views.GetAllDistributions.as_view()),
     # API - Post New Distribution
     path('distributions/post/', views.PostNewDistribution.as_view()),
+    # API - Update Distribution
+    path('distributions/<int:distribution_id>/update/', views.UpdateDistribution.as_view()),
     # API - Get Distribution by ID
     path('distributions/<int:distribution_id>/', views.GetDistributionById.as_view()),
 ]

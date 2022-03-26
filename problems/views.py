@@ -120,6 +120,7 @@ class problemUpdate(APIView):
         problem.tag = Tag.objects.get(name=newTagName)
         
         # Process the Slug
+        tempt = problem.name # Bug 1 => Already Fixed
         if (' ' in problem.name):
             tempt = problem.name.strip()
         tempt = tempt.lower()

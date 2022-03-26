@@ -11,6 +11,9 @@ class Solution(models.Model):
     # 0 = Pending, 1 = Submitted, 2 = Accepted, 3 = Rejected
     solution_result = models.IntegerField(default=0)
     
+    class Meta:
+        ordering = ['presession']
+    
     def __str__(self):
         return f'solution {self.id}'
     
