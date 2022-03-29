@@ -106,3 +106,10 @@ class UserPostedProblems(APIView):
         problems = user.problems.all()
         serializer = ProblemSerializer(problems, many=True)
         return Response(serializer.data)
+
+# Get Users that Ranked Higher
+class RankUserInfosByReputation(APIView):
+    def get(self, request, format=None):
+        user_infos = UserInfo.objects.all().order_by('-reputation')
+        serializer = UserInfoSerializer(user_infos, many=True)
+        return Response(serializer.data)

@@ -3,6 +3,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    # API - Get 3 Hot Users
+    path('rank-users/', views.RankUserInfosByReputation.as_view()),
     # ex: users/register/
     path('users/register/', views.Register.as_view(), name='register'),
     # ex: users/login/
