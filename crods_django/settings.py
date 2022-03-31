@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'presessions',
     'solutions',
     'distributions',
+    'comments',
 ]
 
 MIDDLEWARE = [
