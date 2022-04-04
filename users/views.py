@@ -79,14 +79,18 @@ class EmailUpdate(APIView):
         user = self.get_object(user_id)
         
         if (user.email == request.data.get('email')): 
-            status = False
+            status = 400
             message = 'Please do not use the same email address'
         else:
-            user.email = request.data.get('email')
-            user.save()
-            status = True
-            message = 'Email updated successfully'
-            user.save()
+            # Check whether the email is already in use
+            if User.objects.filter(email = request.data.get('email')).exists():
+                status = 400
+                message = 'Email already in use'
+            else:
+                user.email = request.data.get('email')
+                user.save()
+                status = 201
+                message = 'Email updated successfully'
         
         return Response({
             'status': status,

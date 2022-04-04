@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'solutions',
     'distributions',
     'comments',
+    'emails',
 ]
 
 MIDDLEWARE = [
