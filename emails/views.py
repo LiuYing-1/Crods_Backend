@@ -1,3 +1,4 @@
+import datetime
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
@@ -33,5 +34,42 @@ class CheckValidAddress(APIView):
         return Response({'status': 400, 'message': 'Email Address Not Found'})
 
 class WriteEmailToOthers(APIView):
-    def post(self, request, pk):
-        pass
+    def post(self, request, format=None):
+        # Process Data from request
+        topic = request.data['topic']
+        receiver_address = request.data['receiver_address']
+        sender_address = request.data['sender_address']
+        text = request.data['text']
+        attachment = request.data['attachment']
+        
+        if attachment == '' or attachment == None or attachment == 'undefined':
+            attachment = None
+        
+        date_sent = datetime.datetime.now()
+        reply = request.data['reply']
+        if reply == '' or reply == None or reply == 'undefined':
+            reply = None
+        
+        unread = 0
+        
+        serializer = EmailSerializer(data={
+            'name': topic,
+            'receiver_address': receiver_address,
+            'sender_address': sender_address,
+            'text': text,
+            'attatchment': attachment,
+            'date_sent': date_sent,
+            'reply': reply,
+            'unread': unread,
+        })
+        
+        if serializer.is_valid():
+            serializer.save()
+            return Response({'email': serializer.data, 'status': 200})
+        return Response({'errors': serializer.errors, 'status': 400})
+    
+class GetSentEmailsBySenderAddress(APIView):
+    def get(self, request, sender_address):
+        emails = Email.objects.filter(sender_address=sender_address)
+        serializer = EmailSerializer(emails, many=True)
+        return Response(serializer.data)
