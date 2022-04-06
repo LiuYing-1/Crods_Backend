@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<!-- saved from url=(0292)chrome-extension://bfdogplmndidlpjfhoijckpakkdjkkil/pdf/viewer.html?file=file%3A%2F%2F%2FC%3A%2FUsers%2Fadmin%2FDocuments%2FWeChat%2520Files%2Fwxid_vp7zsofsvcxe22%2FFileStorage%2FFile%2F2022-03%2F%25E6%25A0%25BC%25E6%258B%2589%25E8%25AF%25AD%25E8%25A8%2580%25E7%258F%25AD-7%25E6%259C%2588.pdf -->
+<html dir="ltr" mozdisallowselectionprint="" style="--loadingBar-end-offset:17px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>格拉语言班-7月.pdf</title>
+
+
+    <link rel="stylesheet" href="chrome-extension://bfdogplmndidlpjfhoijckpakkdjkkil/pdf/viewer.css">
+    <link rel="stylesheet" href="chrome-extension://bfdogplmndidlpjfhoijckpakkdjkkil/content/select/select.css">
+
+
+<!-- This snippet is used in production (included from viewer.html) -->
+<link rel="resource" type="application/l10n" href="chrome-extension://bfdogplmndidlpjfhoijckpakkdjkkil/pdf/locale/locale.properties">
+<script src="chrome-extension://bfdogplmndidlpjfhoijckpakkdjkkil/pdf/lib/pdf.js"></script>
+
+
+  <script src="chrome-extension://bfdogplmndidlpjfhoijckpakkdjkkil/pdf/viewer.js"></script>
+    <script src="chrome-extension://bfdogplmndidlpjfhoijckpakkdjkkil/content/select/select.js"></script>
+    <script src="chrome-extension://bfdogplmndidlpjfhoijckpakkdjkkil/content/display/display.js"></script>
+    <script src="chrome-extension://bfdogplmndidlpjfhoijckpakkdjkkil/pdf/vimium-c-injector.js"></script>
+
+  <style id="pdfjs-dark-mode-style">
+ @media (prefers-color-scheme: dark) {
+  .thumbnailImage, .pdfViewer .page {
+    filter: brightness(0.85) grayscale(0.15) invert(1.0) hue-rotate(0.5turn);
+    border-image: none;
+    box-shadow: none;
+  }
+}
+
+ .toolbarButton.darkMode::before,
+ .secondaryToolbarButton.darkMode::before {
+  -webkit-mask-image: var(--toolbarButton-darkMode-auto-icon);
+  mask-image: var(--toolbarButton-darkMode-auto-icon);
+ }
+</style></head><div id="edge-translate-notifier-container" class="edge-translate-notifier-center"></div>
+
+  <body tabindex="1">
+    <div id="outerContainer">
+
+      <div id="sidebarContainer">
+        <div id="toolbarSidebar">
+          <div id="toolbarSidebarLeft">
+            <div class="splitToolbarButton toggled">
+              <button id="viewThumbnail" class="toolbarButton toggled" title="显示缩略图" tabindex="2" data-l10n-id="thumbs">
+                 <span data-l10n-id="thumbs_label">缩略图</span>
+              </button>
+              <button id="viewOutline" class="toolbarButton" title="显示文档大纲（双击展开/折叠所有项）" tabindex="3" data-l10n-id="document_outline" disabled="">
+                 <span data-l10n-id="document_outline_label">文档大纲</span>
+              </button>
+              <button id="viewAttachments" class="toolbarButton" title="显示附件" tabindex="4" data-l10n-id="attachments" disabled="">
+                 <span data-l10n-id="attachments_label">附件</span>
+              </button>
+              <button id="viewLayers" class="toolbarButton" title="显示图层（双击即可将所有图层重置为默认状态）" tabindex="5" data-l10n-id="layers" disabled="">
+                 <span data-l10n-id="layers_label">图层</span>
+              </button>
+            </div>
+          </div>
+
+          <div id="toolbarSidebarRight">
+            <div id="outlineOptionsContainer" class="hidden">
+              <div class="verticalToolbarSeparator"></div>
+
+              <button id="currentOutlineItem" class="toolbarButton" disabled="" title="查找当前大纲项目" tabindex="6" data-l10n-id="current_outline_item">
+                <span data-l10n-id="current_outline_item_label">当前大纲项目</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="sidebarContent">
+          <div id="thumbnailView"><a href="chrome-extension://bfdogplmndidlpjfhoijckpakkdjkkil/pdf/viewer.html?file=file%3A%2F%2F%2FC%3A%2FUsers%2Fadmin%2FDocuments%2FWeChat%2520Files%2Fwxid_vp7zsofsvcxe22%2FFileStorage%2FFile%2F2022-03%2F%25E6%25A0%25BC%25E6%258B%2589%25E8%25AF%25AD%25E8%25A8%2580%25E7%258F%25AD-7%25E6%259C%2588.pdf#page=1" title="第 1 页"><div class="thumbnail selected" data-page-number="1"><div class="thumbnailSelectionRing" style="width: 100px; height: 140px;"></div></div></a><a href="chrome-extension://bfdogplmndidlpjfhoijckpakkdjkkil/pdf/viewer.html?file=file%3A%2F%2F%2FC%3A%2FUsers%2Fadmin%2FDocuments%2FWeChat%2520Files%2Fwxid_vp7zsofsvcxe22%2FFileStorage%2FFile%2F2022-03%2F%25E6%25A0%25BC%25E6%258B%2589%25E8%25AF%25AD%25E8%25A8%2580%25E7%258F%25AD-7%25E6%259C%2588.pdf#page=2" title="第 2 页"><div class="thumbnail" data-page-number="2"><div class="thumbnailSelectionRing" style="width: 100px; height: 140px;"></div></div></a><a href="chrome-extension://bfdogplmndidlpjfhoijckpakkdjkkil/pdf/viewer.html?file=file%3A%2F%2F%2FC%3A%2FUsers%2Fadmin%2FDocuments%2FWeChat%2520Files%2Fwxid_vp7zsofsvcxe22%2FFileStorage%2FFile%2F2022-03%2F%25E6%25A0%25BC%25E6%258B%2589%25E8%25AF%25AD%25E8%25A8%2580%25E7%258F%25AD-7%25E6%259C%2588.pdf#page=3" title="第 3 页"><div class="thumbnail" data-page-number="3"><div class="thumbnailSelectionRing" style="width: 100px; height: 140px;"></div></div></a></div>
+          <div id="outlineView" class="hidden"></div>
+          <div id="attachmentsView" class="hidden"></div>
+          <div id="layersView" class="hidden"></div>
+        </div>
+        <div id="sidebarResizer"></div>
+      </div>  <!-- sidebarContainer -->
+
+      <div id="mainContainer">
+        <div class="findbar hidden doorHanger" id="findbar">
+          <div id="findbarInputContainer">
+            <input id="findInput" class="toolbarField" title="查找" placeholder="在文档中查找…" tabindex="91" data-l10n-id="find_input">
+            <div class="splitToolbarButton">
+              <button id="findPrevious" class="toolbarButton findPrevious" title="查找词语上一次出现的位置" tabindex="92" data-l10n-id="find_previous">
+                <span data-l10n-id="find_previous_label">上一页</span>
+              </button>
+              <div class="splitToolbarButtonSeparator"></div>
+              <button id="findNext" class="toolbarButton findNext" title="查找词语后一次出现的位置" tabindex="93" data-l10n-id="find_next">
+                <span data-l10n-id="find_next_label">下一页</span>
+              </button>
+            </div>
+          </div>
+
+          <div id="findbarOptionsOneContainer">
+            <input type="checkbox" id="findHighlightAll" class="toolbarField" tabindex="94">
+            <label for="findHighlightAll" class="toolbarLabel" data-l10n-id="find_highlight">全部高亮显示</label>
+            <input type="checkbox" id="findMatchCase" class="toolbarField" tabindex="95">
+            <label for="findMatchCase" class="toolbarLabel" data-l10n-id="find_match_case_label">区分大小写</label>
+          </div>
+          <div id="findbarOptionsTwoContainer">
+            <input type="checkbox" id="findEntireWord" class="toolbarField" tabindex="96">
+            <label for="findEntireWord" class="toolbarLabel" data-l10n-id="find_entire_word_label">字词匹配</label>
+            <span id="findResultsCount" class="toolbarLabel hidden"></span>
+          </div>
+
+          <div id="findbarMessageContainer">
+            <span id="findMsg" class="toolbarLabel"></span>
+          </div>
+        </div>  <!-- findbar -->
+
+        <div id="secondaryToolbar" class="secondaryToolbar hidden doorHangerRight">
+          <div id="secondaryToolbarButtonContainer">
+            <button id="secondaryDarkMode" class="secondaryToolbarButton darkMode visibleLargeView" tabindex="50">
+              <span></span>
+            </button>
+
+            <button id="secondaryPresentationMode" class="secondaryToolbarButton presentationMode visibleLargeView" title="切换到演示模式" tabindex="51" data-l10n-id="presentation_mode">
+              <span data-l10n-id="presentation_mode_label">演示模式</span>
+            </button>
+
+            <button id="secondaryOpenFile" class="secondaryToolbarButton openFile visibleLargeView" title="打开文件" tabindex="52" data-l10n-id="open_file">
+              <span data-l10n-id="open_file_label">打开</span>
+            </button>
+
+            <button id="secondaryPrint" class="secondaryToolbarButton print visibleMediumView" title="打印" tabindex="53" data-l10n-id="print">
+              <span data-l10n-id="print_label">打印</span>
+            </button>
+
+            <button id="secondaryDownload" class="secondaryToolbarButton download visibleMediumView" title="下载" tabindex="54" data-l10n-id="download">
+              <span data-l10n-id="download_label">下载</span>
+            </button>
+
+            <a href="chrome-extension://bfdogplmndidlpjfhoijckpakkdjkkil/pdf/viewer.html?file=file%3A%2F%2F%2FC%3A%2FUsers%2Fadmin%2FDocuments%2FWeChat%2520Files%2Fwxid_vp7zsofsvcxe22%2FFileStorage%2FFile%2F2022-03%2F%25E6%25A0%25BC%25E6%258B%2589%25E8%25AF%25AD%25E8%25A8%2580%25E7%258F%25AD-7%25E6%259C%2588.pdf#page=1&amp;zoom=auto,-312,842" id="secondaryViewBookmark" class="secondaryToolbarButton bookmark visibleSmallView" title="当前在看的内容（复制或在新窗口中打开）" tabindex="55" data-l10n-id="bookmark">
+              <span data-l10n-id="bookmark_label">当前在看</span>
+            </a>
+
+            <div class="horizontalToolbarSeparator visibleLargeView"></div>
+
+            <button id="firstPage" class="secondaryToolbarButton firstPage" title="转到第一页" tabindex="56" data-l10n-id="first_page" disabled="">
+              <span data-l10n-id="first_page_label">转到第一页</span>
+            </button>
+            <button id="lastPage" class="secondaryToolbarButton lastPage" title="转到最后一页" tabindex="57" data-l10n-id="last_page">
+              <span data-l10n-id="last_page_label">转到最后一页</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="pageRotateCw" class="secondaryToolbarButton rotateCw" title="顺时针旋转" tabindex="58" data-l10n-id="page_rotate_cw">
+              <span data-l10n-id="page_rotate_cw_label">顺时针旋转</span>
+            </button>
+            <button id="pageRotateCcw" class="secondaryToolbarButton rotateCcw" title="逆时针旋转" tabindex="59" data-l10n-id="page_rotate_ccw">
+              <span data-l10n-id="page_rotate_ccw_label">逆时针旋转</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="cursorSelectTool" class="secondaryToolbarButton selectTool toggled" title="启用文本选择工具" tabindex="60" data-l10n-id="cursor_text_select_tool">
+              <span data-l10n-id="cursor_text_select_tool_label">文本选择工具</span>
+            </button>
+            <button id="cursorHandTool" class="secondaryToolbarButton handTool" title="启用手形工具" tabindex="61" data-l10n-id="cursor_hand_tool">
+              <span data-l10n-id="cursor_hand_tool_label">手形工具</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="scrollVertical" class="secondaryToolbarButton scrollModeButtons scrollVertical toggled" title="使用垂直滚动" tabindex="62" data-l10n-id="scroll_vertical">
+              <span data-l10n-id="scroll_vertical_label">垂直滚动</span>
+            </button>
+            <button id="scrollHorizontal" class="secondaryToolbarButton scrollModeButtons scrollHorizontal" title="使用水平滚动" tabindex="63" data-l10n-id="scroll_horizontal">
+              <span data-l10n-id="scroll_horizontal_label">水平滚动</span>
+            </button>
+            <button id="scrollWrapped" class="secondaryToolbarButton scrollModeButtons scrollWrapped" title="使用平铺滚动" tabindex="64" data-l10n-id="scroll_wrapped">
+              <span data-l10n-id="scroll_wrapped_label">平铺滚动</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator scrollModeButtons"></div>
+
+            <button id="spreadNone" class="secondaryToolbarButton spreadModeButtons spreadNone toggled" title="不加入衔接页" tabindex="65" data-l10n-id="spread_none">
+              <span data-l10n-id="spread_none_label">单页视图</span>
+            </button>
+            <button id="spreadOdd" class="secondaryToolbarButton spreadModeButtons spreadOdd" title="加入衔接页使奇数页作为起始页" tabindex="66" data-l10n-id="spread_odd">
+              <span data-l10n-id="spread_odd_label">双页视图</span>
+            </button>
+            <button id="spreadEven" class="secondaryToolbarButton spreadModeButtons spreadEven" title="加入衔接页使偶数页作为起始页" tabindex="67" data-l10n-id="spread_even">
+              <span data-l10n-id="spread_even_label">书籍视图</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator spreadModeButtons"></div>
+
+            <button id="documentProperties" class="secondaryToolbarButton documentProperties" title="文档属性…" tabindex="68" data-l10n-id="document_properties">
+              <span data-l10n-id="document_properties_label">文档属性…</span>
+            </button>
+          </div>
+        </div>  <!-- secondaryToolbar -->
+
+        <div class="toolbar">
+          <div id="toolbarContainer">
+            <div id="toolbarViewer">
+              <div id="toolbarViewerLeft">
+                <button id="sidebarToggle" class="toolbarButton" title="切换侧栏" tabindex="10" data-l10n-id="toggle_sidebar" aria-expanded="false" aria-controls="sidebarContainer">
+                  <span data-l10n-id="toggle_sidebar_label">切换侧栏</span>
+                </button>
+                <button id="sidebarBack" class="toolbarButton" title="返回到原始阅读器" tabindex="11" data-l10n-id="back_sidebar">
+                  <span data-l10n-id="back_sidebar_label">返回到原始阅读器</span>
+                </button>
+                <div class="toolbarButtonSpacer"></div>
+                <button id="viewFind" class="toolbarButton" title="在文档中查找" tabindex="12" data-l10n-id="findbar" aria-expanded="false" aria-controls="findbar">
+                  <span data-l10n-id="findbar_label">查找</span>
+                </button>
+                <div class="splitToolbarButton hiddenSmallView">
+                  <button class="toolbarButton pageUp" title="上一页" id="previous" tabindex="13" data-l10n-id="previous" disabled="">
+                    <span data-l10n-id="previous_label">上一页</span>
+                  </button>
+                  <div class="splitToolbarButtonSeparator"></div>
+                  <button class="toolbarButton pageDown" title="下一页" id="next" tabindex="14" data-l10n-id="next">
+                    <span data-l10n-id="next_label">下一页</span>
+                  </button>
+                </div>
+                <input type="number" id="pageNumber" class="toolbarField pageNumber" title="页面" value="1" size="4" min="1" tabindex="15" data-l10n-id="page" autocomplete="off" max="3">
+                <span id="numPages" class="toolbarLabel">/ 3</span>
+              </div>
+              <div id="toolbarViewerRight">
+                <button id="darkMode" class="toolbarButton darkMode hiddenLargeView" tabindex="30" title="自动（跟随系统）">
+                  <span>自动（跟随系统）</span>
+                </button>
+
+                <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView" title="切换到演示模式" tabindex="31" data-l10n-id="presentation_mode">
+                  <span data-l10n-id="presentation_mode_label">演示模式</span>
+                </button>
+
+                <button id="openFile" class="toolbarButton openFile hiddenLargeView" title="打开文件" tabindex="32" data-l10n-id="open_file">
+                  <span data-l10n-id="open_file_label">打开</span>
+                </button>
+
+                <button id="print" class="toolbarButton print hiddenMediumView" title="打印" tabindex="33" data-l10n-id="print">
+                  <span data-l10n-id="print_label">打印</span>
+                </button>
+
+                <button id="download" class="toolbarButton download hiddenMediumView" title="下载" tabindex="34" data-l10n-id="download">
+                  <span data-l10n-id="download_label">下载</span>
+                </button>
+                <a href="chrome-extension://bfdogplmndidlpjfhoijckpakkdjkkil/pdf/viewer.html?file=file%3A%2F%2F%2FC%3A%2FUsers%2Fadmin%2FDocuments%2FWeChat%2520Files%2Fwxid_vp7zsofsvcxe22%2FFileStorage%2FFile%2F2022-03%2F%25E6%25A0%25BC%25E6%258B%2589%25E8%25AF%25AD%25E8%25A8%2580%25E7%258F%25AD-7%25E6%259C%2588.pdf#page=1&amp;zoom=auto,-312,842" id="viewBookmark" class="toolbarButton bookmark hiddenSmallView" title="当前在看的内容（复制或在新窗口中打开）" tabindex="35" data-l10n-id="bookmark">
+                  <span data-l10n-id="bookmark_label">当前在看</span>
+                </a>
+
+                <div class="verticalToolbarSeparator hiddenSmallView"></div>
+
+                <button id="secondaryToolbarToggle" class="toolbarButton" title="工具" tabindex="36" data-l10n-id="tools" aria-expanded="false" aria-controls="secondaryToolbar">
+                  <span data-l10n-id="tools_label">工具</span>
+                </button>
+              </div>
+              <div id="toolbarViewerMiddle">
+                <div class="splitToolbarButton">
+                  <button id="zoomOut" class="toolbarButton zoomOut" title="缩小" tabindex="21" data-l10n-id="zoom_out">
+                    <span data-l10n-id="zoom_out_label">缩小</span>
+                  </button>
+                  <div class="splitToolbarButtonSeparator"></div>
+                  <button id="zoomIn" class="toolbarButton zoomIn" title="放大" tabindex="22" data-l10n-id="zoom_in">
+                    <span data-l10n-id="zoom_in_label">放大</span>
+                   </button>
+                </div>
+                <span id="scaleSelectContainer" class="dropdownToolbarButton">
+                  <select id="scaleSelect" title="缩放" tabindex="23" data-l10n-id="zoom">
+                    <option id="pageAutoOption" title="" value="auto" selected="selected" data-l10n-id="page_scale_auto">自动缩放</option>
+                    <option id="pageActualOption" title="" value="page-actual" data-l10n-id="page_scale_actual">实际大小</option>
+                    <option id="pageFitOption" title="" value="page-fit" data-l10n-id="page_scale_fit">适合页面</option>
+                    <option id="pageWidthOption" title="" value="page-width" data-l10n-id="page_scale_width">适合页宽</option>
+                    <option id="customScaleOption" title="" value="custom" disabled="disabled" hidden="true"></option>
+                    <option title="" value="0.5" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 50 }">50%</option>
+                    <option title="" value="0.75" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 75 }">75%</option>
+                    <option title="" value="1" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 100 }">100%</option>
+                    <option title="" value="1.25" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 125 }">125%</option>
+                    <option title="" value="1.5" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 150 }">150%</option>
+                    <option title="" value="2" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 200 }">200%</option>
+                    <option title="" value="3" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 300 }">300%</option>
+                    <option title="" value="4" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 400 }">400%</option>
+                  </select>
+                </span>
+              </div>
+            </div>
+            <div id="loadingBar" class="hidden">
+              <div class="progress" style="height: 100%; width: 100%;">
+                <div class="glimmer">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="viewerContainer" tabindex="0">
+          <div id="viewer" class="pdfViewer"><div class="page" data-page-number="1" role="region" aria-label="第 1 页" data-loaded="true" style="width: 991px; height: 1403px;"><div class="canvasWrapper" style="width: 991px; height: 1403px;"><canvas width="1240" height="1755" style="width: 992px; height: 1404px;"><span class="structTree"><span><span><span role="figure" aria-label="An Image" aria-owns="page2R_mcid0"></span><span role="none" aria-owns="page2R_mcid1"></span></span><span><span role="none" aria-owns="page2R_mcid2"></span></span><span><span role="none" aria-owns="page2R_mcid3"></span></span><span><span role="none" aria-owns="page2R_mcid4"></span></span><span><span role="none" aria-owns="page2R_mcid5"></span></span><span><span role="none" aria-owns="page2R_mcid6"></span></span><span role="table"><span role="row"><span role="cell"><span><span role="none" aria-owns="page2R_mcid7"></span></span></span><span role="cell"><span><span role="none" aria-owns="page2R_mcid8"></span></span></span></span><span role="row"><span role="cell"><span><span role="none" aria-owns="page2R_mcid9"></span></span></span><span role="cell"><span><span role="none" aria-owns="page2R_mcid10"></span></span></span></span><span role="row"><span role="cell"><span><span role="none" aria-owns="page2R_mcid11"></span></span></span><span role="cell"><span><span role="none" aria-owns="page2R_mcid12"></span></span></span></span><span role="row"><span role="cell"><span><span role="none" aria-owns="page2R_mcid13"></span></span></span></span><span role="row"><span role="cell"><span><span role="none" aria-owns="page2R_mcid14"></span></span></span><span role="cell"><span><span role="none" aria-owns="page2R_mcid15"></span></span></span></span><span role="row"><span role="cell"><span><span role="none" aria-owns="page2R_mcid16"></span></span></span><span role="cell"><span><span role="none" aria-owns="page2R_mcid17"></span></span></span></span><span role="row"><span role="cell"><span><span role="none" aria-owns="page2R_mcid18"></span></span></span><span role="cell"><span><span role="none" aria-owns="page2R_mcid19"></span></span></span></span><span role="row"><span role="cell"><span><span role="none" aria-owns="page2R_mcid20"></span></span></span><span role="cell"><span><span role="none" aria-owns="page2R_mcid21"></span></span></span></span><span role="row"><span role="cell"><span><span role="none" aria-owns="page2R_mcid22"></span></span></span><span role="cell"><span><span role="none" aria-owns="page2R_mcid23"></span></span></span></span><span role="row"><span role="cell"><span><span role="none" aria-owns="page2R_mcid24"></span></span><span><span role="none" aria-owns="page2R_mcid25"></span></span></span><span role="cell"><span><span role="none" aria-owns="page2R_mcid26"></span></span><span><span role="none" aria-owns="page2R_mcid27"></span></span></span></span></span><span><span role="none" aria-owns="page2R_mcid28"></span></span><span><span role="none" aria-owns="page2R_mcid29"></span><span role="none" aria-owns="page2R_mcid30"></span><span role="none"><span aria-owns="page2R_mcid31"></span><span aria-owns="page2R_mcid32"></span></span></span><span><span role="none" aria-owns="page2R_mcid33"></span></span><span><span role="none" aria-owns="page2R_mcid34"></span></span><span><span role="none" aria-owns="page2R_mcid35"></span></span><span><span role="none"><span aria-owns="page2R_mcid36"></span><span aria-owns="page2R_mcid37"></span><span aria-owns="page2R_mcid38"></span><span aria-owns="page2R_mcid39"></span><span aria-owns="page2R_mcid40"></span><span aria-owns="page2R_mcid41"></span><span aria-owns="page2R_mcid42"></span></span></span><span><span role="none" aria-owns="page2R_mcid43"></span></span><span><span role="none"><span aria-owns="page2R_mcid44"></span><span aria-owns="page2R_mcid45"></span><span aria-owns="page2R_mcid46"></span></span><span role="none" aria-owns="page2R_mcid47"></span></span><span><span role="none" aria-owns="page2R_mcid48"></span><span role="none" aria-owns="page2R_mcid49"></span><span role="none" aria-owns="page2R_mcid50"></span><span role="none" aria-owns="page2R_mcid51"></span></span><span><span role="none" aria-owns="page2R_mcid52"></span></span><span><span role="none" aria-owns="page2R_mcid53"></span><span role="none" aria-owns="page2R_mcid54"></span><span role="link"><span role="none" aria-owns="page2R_mcid55"></span><span aria-owns="10R"></span></span></span><span><span role="none" aria-owns="page2R_mcid56"></span></span><span><span role="none" aria-owns="page2R_mcid57"></span></span><span><span role="none" aria-owns="page2R_mcid58"></span></span><span><span role="none" aria-owns="page2R_mcid59"></span><span role="none"><span aria-owns="page2R_mcid60"></span><span aria-owns="page2R_mcid61"></span></span></span><span><span role="none" aria-owns="page2R_mcid62"></span></span><span><span role="none" aria-owns="page2R_mcid63"></span></span></span></span></canvas></div><div class="textLayer" style="width: 991px; height: 1403px;"><span class="markedContent" id="page2R_mcid0"></span><span class="markedContent" id="page2R_mcid1"><span class="markedContent"><span role="presentation" dir="ltr" style="left: 338.781px; top: 126.119px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page2R_mcid2"><span class="markedContent"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 152.382px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page2R_mcid3"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 176.233px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.936446);">01 March 2022</span></span><span class="markedContent" id="page2R_mcid4"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 201.154px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page2R_mcid5"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 226.256px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.929774);">Dear Mr Ying Liu</span></span><span class="markedContent" id="page2R_mcid6"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 248.676px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page2R_mcid7"><br role="presentation"><span role="presentation" dir="ltr" style="left: 93.9014px; top: 297.539px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.940698);">Student ID:</span></span><span class="markedContent" id="page2R_mcid8"><span role="presentation" dir="ltr" style="left: 185.623px; top: 297.539px; font-size: 18.3335px; font-family: sans-serif;"> </span><span role="presentation" dir="ltr" style="left: 334.013px; top: 297.539px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.930474);">2744711</span></span><span class="markedContent" id="page2R_mcid9"><span role="presentation" dir="ltr" style="left: 93.9014px; top: 322.551px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.963482);">Last Name:</span></span><span class="markedContent" id="page2R_mcid10"><span role="presentation" dir="ltr" style="left: 187.646px; top: 322.551px; font-size: 18.3335px; font-family: sans-serif;"> </span><span role="presentation" dir="ltr" style="left: 334.013px; top: 322.551px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.956447);">Liu</span></span><span class="markedContent" id="page2R_mcid11"><span role="presentation" dir="ltr" style="left: 93.9014px; top: 347.562px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.951972);">First Name:</span></span><span class="markedContent" id="page2R_mcid12"><span role="presentation" dir="ltr" style="left: 188.63px; top: 347.562px; font-size: 18.3335px; font-family: sans-serif;"> </span><span role="presentation" dir="ltr" style="left: 334.013px; top: 347.562px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.924367);">Ying</span></span><span class="markedContent" id="page2R_mcid13"><span role="presentation" dir="ltr" style="left: 93.9014px; top: 372.574px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.912377);">Middle Name:</span></span><span class="markedContent" id="page2R_mcid14"><span role="presentation" dir="ltr" style="left: 93.9014px; top: 397.586px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.901316);">Application Number:</span></span><span class="markedContent" id="page2R_mcid15"><span role="presentation" dir="ltr" style="left: 258.983px; top: 397.586px; font-size: 18.3335px; font-family: sans-serif;"> </span><span role="presentation" dir="ltr" style="left: 334.013px; top: 397.586px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.948558);">01045410</span></span><span class="markedContent" id="page2R_mcid16"><span role="presentation" dir="ltr" style="left: 93.9014px; top: 422.597px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.92119);">Date of Birth:</span></span><span class="markedContent" id="page2R_mcid17"><span role="presentation" dir="ltr" style="left: 200.895px; top: 422.597px; font-size: 18.3335px; font-family: sans-serif;"> </span><span role="presentation" dir="ltr" style="left: 334.013px; top: 422.597px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.941748);">28 December 1999</span></span><span class="markedContent" id="page2R_mcid18"><span role="presentation" dir="ltr" style="left: 93.9014px; top: 447.609px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.933203);">Programme of Study:</span></span><span class="markedContent" id="page2R_mcid19"><span role="presentation" dir="ltr" style="left: 267.121px; top: 447.609px; font-size: 18.3335px; font-family: sans-serif;"> </span><span role="presentation" dir="ltr" style="left: 334.013px; top: 447.609px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.976169);">Pre-sess English Jul Entry(OL)</span></span><span class="markedContent" id="page2R_mcid20"><span role="presentation" dir="ltr" style="left: 93.9014px; top: 472.62px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.91955);">Admit Term:</span></span><span class="markedContent" id="page2R_mcid21"><span role="presentation" dir="ltr" style="left: 191.692px; top: 472.62px; font-size: 18.3335px; font-family: sans-serif;"> </span><span role="presentation" dir="ltr" style="left: 334.013px; top: 472.62px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.928996);">2021-22</span></span><span class="markedContent" id="page2R_mcid22"><span role="presentation" dir="ltr" style="left: 93.9014px; top: 497.632px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.919613);">Mode of Study:</span></span><span class="markedContent" id="page2R_mcid23"><span role="presentation" dir="ltr" style="left: 217.214px; top: 497.632px; font-size: 18.3335px; font-family: sans-serif;"> </span><span role="presentation" dir="ltr" style="left: 334.013px; top: 497.632px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.92687);">Full-Time</span></span><span class="markedContent" id="page2R_mcid24"><span role="presentation" dir="ltr" style="left: 93.9014px; top: 522.644px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.94928);">Start Date:</span></span><span class="markedContent" id="page2R_mcid25"><span role="presentation" dir="ltr" style="left: 93.9014px; top: 545.154px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.964913);">Expected End Date:</span></span><span class="markedContent" id="page2R_mcid26"><span role="presentation" dir="ltr" style="left: 334.013px; top: 522.644px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.933932);">22-July-2022</span><span class="markedContent"><span role="presentation" dir="ltr" style="left: 440.003px; top: 522.644px; font-size: 18.3335px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page2R_mcid27"><span role="presentation" dir="ltr" style="left: 334.013px; top: 545.154px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.920136);">26-August-2022</span></span><span class="markedContent" id="page2R_mcid28"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 571.326px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page2R_mcid29"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 595.177px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.912296);">I am delighted to inform you that the University of Glasgow is making you an </span></span><span class="markedContent" id="page2R_mcid30"><span role="presentation" dir="ltr" style="left: 691.269px; top: 595.177px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.988308);">Unconditional </span></span><span class="markedContent" id="page2R_mcid31"><span role="presentation" dir="ltr" style="left: 818.554px; top: 595.177px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.883229);">offer for the</span></span><span class="markedContent" id="page2R_mcid32"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 617.688px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.921376);">above program.</span></span><span class="markedContent" id="page2R_mcid33"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 660.118px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page2R_mcid34"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 683.969px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.997142);">Please retain this email communication as no hard copy offer letter will be sent.</span></span><span class="markedContent" id="page2R_mcid35"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 708.89px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page2R_mcid36"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 732.741px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.92022);">If your scores are below our recommended level we strongly advise you to continue to improve these</span></span><span class="markedContent" id="page2R_mcid37"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 755.252px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.924681);">skills between now and the beginning of the course. English for Academic Study normally recommends a</span></span><span class="markedContent" id="page2R_mcid38"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 777.762px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.934313);">minimum of 8 weeks study to increase a subskill by 0.5 (IELTS equivalent). If you are aiming for a higher</span></span><span class="markedContent" id="page2R_mcid39"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 800.273px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.944763);">score (e.g. 7.0 overall) then you need to have a higher level (e.g. 0.5 IELTS equivalent higher in each</span></span><span class="markedContent" id="page2R_mcid40"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 822.783px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.916754);">subskill) when you start the course. If you do not reach the recommended level by the end of the pre-</span></span><span class="markedContent" id="page2R_mcid41"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 845.294px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.921464);">sessional course, there is a strong likelihood that you will not be able to begin your academic course in</span></span><span class="markedContent" id="page2R_mcid42"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 867.804px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.922188);">September. By accepting this offer you are accepting responsibility for your own progression.</span></span><span class="markedContent" id="page2R_mcid43"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 892.726px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page2R_mcid44"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 939.087px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.900198);">Important information about accepting an offer for the Online programme:</span><span class="markedContent"><span role="presentation" dir="ltr" style="left: 662.444px; top: 939.087px; font-size: 18.3335px; font-family: sans-serif;"> </span></span><span role="presentation" dir="ltr" style="left: 667.538px; top: 939.087px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.94039);"> You will not receive a CAS for</span></span><span class="markedContent" id="page2R_mcid45"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 961.598px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.933857);">the Online Pre-sessional Course and are not expected to travel to Glasgow.</span><span class="markedContent"><span role="presentation" dir="ltr" style="left: 681.135px; top: 961.598px; font-size: 18.3335px; font-family: sans-serif;"> </span></span><span role="presentation" dir="ltr" style="left: 686.229px; top: 961.598px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.933912);"> You are expected to</span></span><span class="markedContent" id="page2R_mcid46"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 984.108px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.925354);">complete the entire pre-sessional course online.</span></span><span class="markedContent" id="page2R_mcid47"><span role="presentation" dir="ltr" style="left: 457.938px; top: 984.108px; font-size: 18.3335px; font-family: sans-serif;">.</span></span><span class="markedContent" id="page2R_mcid48"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1030.38px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.999411);">Tuition Fees for Academic Year 2021-22: </span></span><span class="markedContent" id="page2R_mcid49"><span role="presentation" dir="ltr" style="left: 423.918px; top: 1030.38px; font-size: 18.3335px; font-family: sans-serif;">£</span></span><span class="markedContent" id="page2R_mcid50"><span role="presentation" dir="ltr" style="left: 434.098px; top: 1030.38px; font-size: 18.3335px; font-family: sans-serif;"> </span></span><span class="markedContent" id="page2R_mcid51"><span role="presentation" dir="ltr" style="left: 439.179px; top: 1029.04px; font-size: 20.0093px; font-family: sans-serif; transform: scaleX(0.948817);">2228</span></span><span class="markedContent" id="page2R_mcid52"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1052.89px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.933048);">Note that all fees are subject to an annual increase.</span></span><span class="markedContent" id="page2R_mcid53"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1145.43px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.915238);">Information on fee rates can be found at:</span></span><span class="markedContent" id="page2R_mcid54"><span role="presentation" dir="ltr" style="left: 398.867px; top: 1142.76px; font-size: 20.0093px; font-family: serif;"> </span></span><span class="markedContent" id="page2R_mcid55"><span role="presentation" dir="ltr" style="left: 403.87px; top: 1145.43px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.917373);">https://www.gla.ac.uk/schools/mlc/eas/pre-sessionalcourses/</span></span><span class="markedContent" id="page2R_mcid56"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1170.35px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page2R_mcid57"><span class="markedContent"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1196.62px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page2R_mcid58"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1220.47px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.992315);">Accept or Decline the Offer:</span></span><span class="markedContent" id="page2R_mcid59"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1242.98px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.934881);">You must accept or decline the offer using Applicant Self Service – see below for access details.</span></span><span class="markedContent" id="page2R_mcid60"><span role="presentation" dir="ltr" style="left: 847.24px; top: 1242.98px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.921862);"> You will</span></span><span class="markedContent" id="page2R_mcid61"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1265.49px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.92892);">be allowed 14 days after processing your decision to cancel this decision.</span></span><span class="markedContent" id="page2R_mcid62"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1290.41px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page2R_mcid63"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1314.26px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(1.0249);">Applicant Self Service:</span></span><div class="endOfContent"></div></div><div class="annotationLayer"><section data-annotation-id="10R" class="linkAnnotation" style="transform: matrix(1.66667, 0, 0, 1.66667, 0, 0); transform-origin: -242.099px -683.304px; left: 242.099px; top: 683.304px; width: 294.887px; height: 15.7573px;"><a title="https://www.gla.ac.uk/schools/mlc/eas/pre-sessionalcourses/" href="https://www.gla.ac.uk/schools/mlc/eas/pre-sessionalcourses/" target="" rel="noopener noreferrer nofollow"></a></section></div></div><div class="page" data-page-number="2" role="region" aria-label="第 2 页" data-loaded="true" style="width: 991px; height: 1403px;"><div class="canvasWrapper" style="width: 991px; height: 1403px;"><canvas width="1240" height="1755" style="width: 992px; height: 1404px;"><span class="structTree"><span><span><span role="none"><span aria-owns="page12R_mcid0"></span><span aria-owns="page12R_mcid1"></span></span><span role="none" aria-owns="page12R_mcid2"></span><span role="none" aria-owns="page12R_mcid3"></span></span><span role="list"><span role="listitem"><span><span role="none" aria-owns="page12R_mcid4"></span></span></span><span role="listitem"><span><span role="none" aria-owns="page12R_mcid5"></span></span></span><span role="listitem"><span><span role="none" aria-owns="page12R_mcid6"></span></span></span><span role="listitem"><span><span role="none" aria-owns="page12R_mcid7"></span></span></span></span><span><span role="none" aria-owns="page12R_mcid8"></span><span role="none" aria-owns="page12R_mcid9"></span><span role="none"><span aria-owns="page12R_mcid10"></span><span aria-owns="page12R_mcid11"></span></span></span><span><span role="none" aria-owns="page12R_mcid12"></span></span><span><span role="link"><span role="none" aria-owns="page12R_mcid13"></span><span aria-owns="13R"></span></span></span><span><span role="none" aria-owns="page12R_mcid14"></span></span><span><span role="none"><span aria-owns="page12R_mcid15"></span><span aria-owns="page12R_mcid16"></span></span></span><span><span role="none" aria-owns="page12R_mcid17"></span></span><span><span role="none" aria-owns="page12R_mcid18"></span><span role="link"><span role="none" aria-owns="page12R_mcid19"></span><span aria-owns="14R"></span></span><span role="none"><span aria-owns="page12R_mcid20"></span><span aria-owns="page12R_mcid21"></span></span><span role="link"><span role="none" aria-owns="page12R_mcid22"></span><span aria-owns="15R"></span></span></span><span><span role="none" aria-owns="page12R_mcid23"></span></span><span><span role="none" aria-owns="page12R_mcid24"></span></span><span><span role="none" aria-owns="page12R_mcid25"></span></span><span><span role="none" aria-owns="page12R_mcid26"></span></span><span><span role="none" aria-owns="page12R_mcid27"></span></span><span><span role="none" aria-owns="page12R_mcid28"></span></span><span><span role="none"><span aria-owns="page12R_mcid29"></span><span aria-owns="page12R_mcid30"></span><span aria-owns="page12R_mcid31"></span></span></span><span><span role="none" aria-owns="page12R_mcid32"></span></span><span><span role="none" aria-owns="page12R_mcid33"></span></span><span><span role="none" aria-owns="page12R_mcid34"></span></span><span><span role="none"><span aria-owns="page12R_mcid35"></span><span aria-owns="page12R_mcid36"></span><span aria-owns="page12R_mcid37"></span></span></span><span><span role="none" aria-owns="page12R_mcid38"></span></span><span><span role="none"><span aria-owns="page12R_mcid39"></span><span aria-owns="page12R_mcid40"></span><span aria-owns="page12R_mcid41"></span></span></span><span><span role="none" aria-owns="page12R_mcid42"></span></span><span><span role="none" aria-owns="page12R_mcid43"></span></span><span><span role="none" aria-owns="page12R_mcid44"></span></span><span><span role="none" aria-owns="page12R_mcid45"></span></span><span><span role="none" aria-owns="page12R_mcid46"></span></span><span><span role="none" aria-owns="page12R_mcid47"></span></span><span><span role="none" aria-owns="page12R_mcid48"></span></span><span><span role="none"><span aria-owns="page12R_mcid49"></span><span aria-owns="page12R_mcid50"></span></span></span><span><span role="none" aria-owns="page12R_mcid51"></span></span><span><span role="none" aria-owns="page12R_mcid52"></span></span><span><span role="none" aria-owns="page12R_mcid53"></span></span><span><span role="none" aria-owns="page12R_mcid54"></span></span><span><span role="none"><span aria-owns="page12R_mcid55"></span><span aria-owns="page12R_mcid56"></span><span aria-owns="page12R_mcid57"></span></span></span><span><span role="none" aria-owns="page12R_mcid58"></span></span><span><span role="none" aria-owns="page12R_mcid59"></span><span role="link"><span role="none" aria-owns="page12R_mcid60"></span><span aria-owns="16R"></span></span><span role="none" aria-owns="page12R_mcid61"></span></span></span></span></canvas></div><div class="textLayer" style="width: 991px; height: 1403px;"><span class="markedContent" id="page12R_mcid0"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 51.1746px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.918264);">Now that you have submitted your application you must use Applicant Self Service to manage your</span></span><span class="markedContent" id="page12R_mcid1"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 73.6851px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.914914);">application. In </span></span><span class="markedContent" id="page12R_mcid2"><span role="presentation" dir="ltr" style="left: 186.874px; top: 73.6851px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(1.01654);">Applicant Self Service</span></span><span class="markedContent" id="page12R_mcid3"><span role="presentation" dir="ltr" style="left: 379.444px; top: 73.6851px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.913211);"> you will be able to:</span></span><span class="markedContent" id="page12R_mcid4"><span role="presentation" dir="ltr" style="left: 108.361px; top: 99.9473px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.917215);">check the status of your application</span></span><span class="markedContent" id="page12R_mcid5"><span role="presentation" dir="ltr" style="left: 108.361px; top: 126.209px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.90961);">upload any additional documents</span></span><span class="markedContent" id="page12R_mcid6"><span role="presentation" dir="ltr" style="left: 108.361px; top: 152.472px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.91855);">update your personal details</span></span><span class="markedContent" id="page12R_mcid7"><span role="presentation" dir="ltr" style="left: 108.361px; top: 178.734px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.912684);">accept your offer</span></span><span class="markedContent" id="page12R_mcid8"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 201.244px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.997203);">To access </span></span><span class="markedContent" id="page12R_mcid9"><span role="presentation" dir="ltr" style="left: 155.258px; top: 201.244px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(1.01439);">Applicant Self Service </span></span><span class="markedContent" id="page12R_mcid10"><span role="presentation" dir="ltr" style="left: 352.908px; top: 201.244px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.932144);">you must use the email address and password you used when you</span></span><span class="markedContent" id="page12R_mcid11"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 223.755px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.910849);">submitted your application on the University Online Application Form.</span></span><span class="markedContent" id="page12R_mcid12"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 248.676px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid13"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 272.437px; font-size: 20.0093px; font-family: sans-serif; transform: scaleX(0.943214);">Click this link here to access Applicant Self Service</span></span><span class="markedContent" id="page12R_mcid14"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 298.7px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid15"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 322.551px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.919592);">If you have forgotten your password then you can request a new password using the 'Forgotten your</span></span><span class="markedContent" id="page12R_mcid16"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 345.061px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.91709);">password?' link on the Online Application log in page.</span></span><span class="markedContent" id="page12R_mcid17"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 369.983px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid18"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 393.834px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.924908);">If you have any technical problems with Applicant Self Service, please see the troubleshooting guide at</span></span><span class="markedContent" id="page12R_mcid19"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 416.344px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.894841);">http://www.gla.ac.uk/applications/applicationtroubleshootingfaqs/</span></span><span class="markedContent" id="page12R_mcid20"><span role="presentation" dir="ltr" style="left: 591.476px; top: 416.344px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.918312);"> and if you still experience problems you</span></span><span class="markedContent" id="page12R_mcid21"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 438.855px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.93648);">can contact: </span></span><span class="markedContent" id="page12R_mcid22"><span role="presentation" dir="ltr" style="left: 172.59px; top: 438.855px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.908273);">https://www.gla.ac.uk/applications</span></span><span class="markedContent" id="page12R_mcid23"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 463.776px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid24"><span class="markedContent"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 490.039px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid25"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 513.89px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(1.03551);">Fees Payment:</span></span><span class="markedContent" id="page12R_mcid26"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 538.811px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid27"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 562.662px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.9436);">Online Payment:</span></span><span class="markedContent" id="page12R_mcid28"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 587.584px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid29"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 611.435px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.936406);">You may make payments through Applicant Self Service using a Credit Card or a Debit Card. The</span></span><span class="markedContent" id="page12R_mcid30"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 633.945px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.938873);">following credit cards and debit cards are accepted: Access, Visa Debit, Visa Credit, Mastercard, Maestro</span></span><span class="markedContent" id="page12R_mcid31"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 656.456px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.943066);">or Solo. The University does not accept American Express or Diners Club.</span></span><span class="markedContent" id="page12R_mcid32"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 681.377px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid33"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 705.228px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.928175);">If you are unable to make your payment online, you can also pay be bank transfer as below:</span></span><span class="markedContent" id="page12R_mcid34"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 730.15px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid35"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 754.001px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.91823);">Payment of tuition fees can be made by transferring funds directly into the University bank account.</span></span><span class="markedContent" id="page12R_mcid36"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 776.512px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.926689);">Please be aware that choosing this method of payment can mean that it will take several weeks before</span></span><span class="markedContent" id="page12R_mcid37"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 799.022px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.923214);">your payment is received and allocated to your account.</span></span><span class="markedContent" id="page12R_mcid38"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 823.944px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid39"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 847.795px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.914456);">Your bank will normally charge you a fee for this service which will be deducted from the amount of</span></span><span class="markedContent" id="page12R_mcid40"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 870.305px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.920027);">money you transfer. This will result in an outstanding fee balance for you to pay before you can complete</span></span><span class="markedContent" id="page12R_mcid41"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 892.816px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.910038);">registration.</span></span><span class="markedContent" id="page12R_mcid42"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 917.737px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid43"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 941.588px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.92993);">University bank account details:</span></span><span class="markedContent" id="page12R_mcid44"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 962.848px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.973537);">Bank name: HSBC plc, 2 Buchanan Street, Glasgow, G1 3LB</span></span><span class="markedContent" id="page12R_mcid45"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 985.359px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.947559);">Sort Code: 402247</span></span><span class="markedContent" id="page12R_mcid46"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1007.87px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.924735);">Account Number: 81656929</span></span><span class="markedContent" id="page12R_mcid47"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1030.38px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.93747);">Bank Account Name: University of Glasgow Tuition Fee Income</span></span><span class="markedContent" id="page12R_mcid48"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1055.3px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid49"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1079.15px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.909636);">If your payment is being sent from outside the United Kingdom but within the European Union you</span></span><span class="markedContent" id="page12R_mcid50"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1101.66px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.904643);">should quote the following IBAN number:</span></span><span class="markedContent" id="page12R_mcid51"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1124.17px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.96956);">GB72HBUK40224781656929</span></span><span class="markedContent" id="page12R_mcid52"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1145.34px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid53"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1167.94px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.960299);">You may also be asked for the SWIFT code which is HBUKGB4B</span></span><span class="markedContent" id="page12R_mcid54"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1189.11px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid55"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1211.71px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.913648);">When transferring funds you must ensure that your bank quotes the name of the student and their</span></span><span class="markedContent" id="page12R_mcid56"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1234.22px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.921553);">University of Glasgow student number (also known as GUID) on the transaction. If you do not do this</span></span><span class="markedContent" id="page12R_mcid57"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1256.73px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.914435);">there may be a delay in correctly identifying your payment which could delay registration.</span></span><span class="markedContent" id="page12R_mcid58"><span class="markedContent"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1281.66px; font-size: 20.0093px; font-family: sans-serif;"> </span></span></span><span class="markedContent" id="page12R_mcid59"><br role="presentation"><span role="presentation" dir="ltr" style="left: 68.6553px; top: 1305.51px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.908732);">If you intend to pay by this method please download the </span></span><span class="markedContent" id="page12R_mcid60"><span role="presentation" dir="ltr" style="left: 526.27px; top: 1305.51px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.923416);">Notification of Bank Transfer</span></span><span class="markedContent" id="page12R_mcid61"><span role="presentation" dir="ltr" style="left: 756.885px; top: 1305.51px; font-size: 18.3335px; font-family: sans-serif; transform: scaleX(0.901343);"> form.</span></span><div class="endOfContent"></div></div><div class="annotationLayer"><section data-annotation-id="13R" class="linkAnnotation" style="transform: matrix(1.66667, 0, 0, 1.66667, 0, 0); transform-origin: -41.0056px -160.311px; left: 41.0056px; top: 160.311px; width: 270.876px; height: 15.7573px;"><a title="https://uogapply.mycampus.gla.ac.uk/psc/campus/EMPLOYEE/SA/c/CY2_AD_MENU.CY2_AD_NUR_FL.GBL&amp;cmd=start?CAMPUS_URL=https%3a%2f%2fuogapply.mycampus.gla.ac.uk%3a443%2fpsp%2fcampus%2fEMPLOYEE%2fSA%2fs%2fWEBLIB_SCC_NUR.SCC_SS_GATEKEEPER.FieldFormula.IScript_SCC_GateKeeper%3fSCC_APPL_CONTXT_ID%3dSCC_NURCTXT_20171218163641" href="https://uogapply.mycampus.gla.ac.uk/psc/campus/EMPLOYEE/SA/c/CY2_AD_MENU.CY2_AD_NUR_FL.GBL&amp;cmd=start?CAMPUS_URL=https%3a%2f%2fuogapply.mycampus.gla.ac.uk%3a443%2fpsp%2fcampus%2fEMPLOYEE%2fSA%2fs%2fWEBLIB_SCC_NUR.SCC_SS_GATEKEEPER.FieldFormula.IScript_SCC_GateKeeper%3fSCC_APPL_CONTXT_ID%3dSCC_NURCTXT_20171218163641" target="" rel="noopener noreferrer nofollow"></a></section><section data-annotation-id="14R" class="linkAnnotation" style="transform: matrix(1.66667, 0, 0, 1.66667, 0, 0); transform-origin: -41.0056px -245.851px; left: 41.0056px; top: 245.851px; width: 313.646px; height: 15.7573px;"><a title="http://www.gla.ac.uk/applications/applicationtroubleshootingfaqs/" href="http://www.gla.ac.uk/applications/applicationtroubleshootingfaqs/" target="" rel="noopener noreferrer nofollow"></a></section><section data-annotation-id="15R" class="linkAnnotation" style="transform: matrix(1.66667, 0, 0, 1.66667, 0, 0); transform-origin: -103.285px -259.357px; left: 103.285px; top: 259.357px; width: 165.077px; height: 15.7573px;"><a title="https://www.gla.ac.uk/applications" href="https://www.gla.ac.uk/applications" target="" rel="noopener noreferrer nofollow"></a></section><section data-annotation-id="16R" class="linkAnnotation" style="transform: matrix(1.66667, 0, 0, 1.66667, 0, 0); transform-origin: -315.633px -779.349px; left: 315.633px; top: 779.349px; width: 138.815px; height: 15.7574px;"><a title="http://www.gla.ac.uk/media/media_417831_en.docx" href="http://www.gla.ac.uk/media/media_417831_en.docx" target="" rel="noopener noreferrer nofollow"></a></section></div></div><div class="page" data-page-number="3" role="region" aria-label="第 3 页" style="width: 991px; height: 1403px;"><div class="loadingIcon" role="img" aria-label="正在载入…"></div></div></div>
+        </div>
+
+        <div id="errorWrapper" hidden="true">
+          <div id="errorMessageLeft">
+            <span id="errorMessage"></span>
+            <button id="errorShowMore" data-l10n-id="error_more_info">更多信息</button>
+            <button id="errorShowLess" data-l10n-id="error_less_info" hidden="true">更少信息</button>
+          </div>
+          <div id="errorMessageRight">
+            <button id="errorClose" data-l10n-id="error_close">关闭</button>
+          </div>
+          <div class="clearBoth"></div>
+          <textarea id="errorMoreInfo" hidden="true" readonly="readonly"></textarea>
+        </div>
+      </div> <!-- mainContainer -->
+
+      <div id="overlayContainer" class="hidden">
+        <div id="passwordOverlay" class="container hidden">
+          <div class="dialog">
+            <div class="row">
+              <p id="passwordText" data-l10n-id="password_label">输入密码以打开此 PDF 文件。</p>
+            </div>
+            <div class="row">
+              <input type="password" id="password" class="toolbarField">
+            </div>
+            <div class="buttonRow">
+              <button id="passwordCancel" class="overlayButton"><span data-l10n-id="password_cancel">取消</span></button>
+              <button id="passwordSubmit" class="overlayButton"><span data-l10n-id="password_ok">确定</span></button>
+            </div>
+          </div>
+        </div>
+        <div id="documentPropertiesOverlay" class="container hidden">
+          <div class="dialog">
+            <div class="row">
+              <span data-l10n-id="document_properties_file_name">文件名:</span> <p id="fileNameField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_file_size">文件大小:</span> <p id="fileSizeField">-</p>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+              <span data-l10n-id="document_properties_title">标题:</span> <p id="titleField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_author">作者:</span> <p id="authorField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_subject">主题:</span> <p id="subjectField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_keywords">关键词:</span> <p id="keywordsField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_creation_date">创建日期:</span> <p id="creationDateField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_modification_date">修改日期:</span> <p id="modificationDateField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_creator">创建者:</span> <p id="creatorField">-</p>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+              <span data-l10n-id="document_properties_producer">PDF 生成器：</span> <p id="producerField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_version">PDF 版本:</span> <p id="versionField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_page_count">页数:</span> <p id="pageCountField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_page_size">页面大小：</span> <p id="pageSizeField">-</p>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+              <span data-l10n-id="document_properties_linearized">快速 Web 视图：</span> <p id="linearizedField">-</p>
+            </div>
+            <div class="buttonRow">
+              <button id="documentPropertiesClose" class="overlayButton"><span data-l10n-id="document_properties_close">关闭</span></button>
+            </div>
+          </div>
+        </div>
+        <div id="printServiceOverlay" class="container hidden">
+          <div class="dialog">
+            <div class="row">
+              <span data-l10n-id="print_progress_message">正在准备打印文档…</span>
+            </div>
+            <div class="row">
+              <progress value="0" max="100"></progress>
+              <span data-l10n-id="print_progress_percent" data-l10n-args="{ &quot;progress&quot;: 0 }" class="relative-progress">0%</span>
+            </div>
+            <div class="buttonRow">
+              <button id="printCancel" class="overlayButton"><span data-l10n-id="print_progress_close">取消</span></button>
+            </div>
+          </div>
+        </div>
+      </div>  <!-- overlayContainer -->
+
+    </div> <!-- outerContainer -->
+    <div id="printContainer"></div>
+  
+
+<input id="fileInput" class="fileInput" type="file"></body></html>
