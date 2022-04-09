@@ -117,3 +117,17 @@ class RankUserInfosByReputation(APIView):
         user_infos = UserInfo.objects.all().order_by('-reputation')
         serializer = UserInfoSerializer(user_infos, many=True)
         return Response(serializer.data)
+    
+class GetEmailAddressByUsername(APIView):
+    def get(self, request, username, format=None):
+        user = User.objects.get(username = username)
+        if (user.email == '' or user.email == None):
+            return Response({
+                'status': False,
+                'email': 'Has not set email address'
+            })
+        else:
+            return Response({
+                'status': True,
+                'email': user.email
+            })
