@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.http import Http404
 
 from django.contrib.auth.models import User
@@ -6,9 +5,14 @@ from rest_framework.authtoken.views import APIView, AuthTokenSerializer
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from .models import UserInfo
+from problems.models import Problem
+from presessions.models import Presession
+from solutions.models import Solution
+from distributions.models import Distribution
 
 from .serializers import UserInfoSerializer
 from problems.serializers import ProblemSerializer
+from distributions.serializers import DistributionSerializer
 
 # User Register
 class Register(APIView):
@@ -131,3 +135,25 @@ class GetEmailAddressByUsername(APIView):
                 'status': True,
                 'email': user.email
             })
+
+# For Bar Chart Module
+class GetUserAcceptedSolutionsWithDate(APIView):
+    def get(self, request, user_id, format=None):
+        user = User.objects.get(id = user_id)
+        # Get All the posted and completed problmes
+        problems = Problem.objects.filter(user = user, status = 2)
+        # Get All the related accepted presessions
+        presessions = []
+        for problem in problems:
+            presessions.append(Presession.objects.get(problem = problem, result = 1))
+        solutions = []
+        for presession in presessions:
+            solution = Solution.objects.get(presession = presession)
+            if solution.solution_result == 2:
+                solutions.append(solution)
+        # Get All the related distributions
+        distributions = []
+        for solution in solutions:
+            distributions.append(Distribution.objects.get(solution = solution))
+        serializer = DistributionSerializer(distributions, many=True)
+        return Response(serializer.data)
