@@ -17,6 +17,8 @@ urlpatterns = [
     path('users/<int:user_id>/posted-problems/', views.UserPostedProblems.as_view(), name='user_posted_problems'),
     # Get User Address by Username
     path('users/<str:username>/email-address/', views.GetEmailAddressByUsername.as_view()),
-    # Get User Accepted Solutions with Date
+    # Get User Accepted Solutions with Date - Bar Chart 1
     path('users/<int:user_id>/accepted-solutions/', views.GetUserAcceptedSolutionsWithDate.as_view()),
+    # Get User Rejected Solutions With Date - Bar Chart 1
+    path('users/<int:user_id>/rejected-solutions/', views.GetUserRejectedSolutionsWithDate.as_view()),
 ]

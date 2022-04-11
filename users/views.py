@@ -136,7 +136,7 @@ class GetEmailAddressByUsername(APIView):
                 'email': user.email
             })
 
-# For Bar Chart Module
+# For Bar Chart Module in User Profile
 class GetUserAcceptedSolutionsWithDate(APIView):
     def get(self, request, user_id, format=None):
         user = User.objects.get(id = user_id)
@@ -150,6 +150,28 @@ class GetUserAcceptedSolutionsWithDate(APIView):
         for presession in presessions:
             solution = Solution.objects.get(presession = presession)
             if solution.solution_result == 2:
+                solutions.append(solution)
+        # Get All the related distributions
+        distributions = []
+        for solution in solutions:
+            distributions.append(Distribution.objects.get(solution = solution))
+        serializer = DistributionSerializer(distributions, many=True)
+        return Response(serializer.data)
+    
+# For Pie Chart Module in User Profile
+class GetUserRejectedSolutionsWithDate(APIView):
+    def get(self, request, user_id, format=None):
+        user = User.objects.get(id = user_id)
+        # Get All the posted and completed problmes
+        problems = Problem.objects.filter(user = user, status = 2)
+        # Get All the related accepted presessions
+        presessions = []
+        for problem in problems:
+            presessions.append(Presession.objects.get(problem = problem, result = 1))
+        solutions = []
+        for presession in presessions:
+            solution = Solution.objects.get(presession = presession)
+            if solution.solution_result == 3:
                 solutions.append(solution)
         # Get All the related distributions
         distributions = []
