@@ -17,8 +17,14 @@ urlpatterns = [
     path('users/<int:user_id>/posted-problems/', views.UserPostedProblems.as_view(), name='user_posted_problems'),
     # Get User Address by Username
     path('users/<str:username>/email-address/', views.GetEmailAddressByUsername.as_view()),
-    # Get User Accepted Solutions with Date - Bar Chart 1
+    # Get User Accepted Solutions with Date - <Posted Module>
     path('users/<int:user_id>/accepted-solutions/', views.GetUserAcceptedSolutionsWithDate.as_view()),
-    # Get User Rejected Solutions With Date - Bar Chart 1
+    # Get User Rejected Solutions With Date - <Posted Module>
     path('users/<int:user_id>/rejected-solutions/', views.GetUserRejectedSolutionsWithDate.as_view()),
+    # Get User Passed Presessions - <Picked Module>
+    path('users/<int:user_id>/passed-presessions/', views.GetUserPassedPresessions.as_view()),
+    # Get User Familiar Tags - <Picked Module>
+    path('users/<int:user_id>/picked-problems/', views.GetUserPickedProblems.as_view()),
+    # Get User Distribution - <Picked Module>
+    path('users/<int:user_id>/distributions/', views.GetUserSubmittedSolutionDistributions.as_view()),
 ]

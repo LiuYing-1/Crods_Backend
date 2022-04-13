@@ -11,6 +11,7 @@ from solutions.models import Solution
 from distributions.models import Distribution
 
 from .serializers import UserInfoSerializer
+from presessions.serializers import PresessionSerializer
 from problems.serializers import ProblemSerializer
 from distributions.serializers import DistributionSerializer
 
@@ -177,5 +178,38 @@ class GetUserRejectedSolutionsWithDate(APIView):
         distributions = []
         for solution in solutions:
             distributions.append(Distribution.objects.get(solution = solution))
+        serializer = DistributionSerializer(distributions, many=True)
+        return Response(serializer.data)
+    
+# For Bar Chart Module in User Profile - Picked Module
+class GetUserPassedPresessions(APIView):
+    def get(self, request, user_id, format=None):
+        user = User.objects.get(id = user_id)
+        presessions = Presession.objects.filter(user = user, result = 1)
+        serializer = PresessionSerializer(presessions, many=True)
+            
+        return Response(serializer.data)
+
+class GetUserPickedProblems(APIView):
+    def get(self, request, user_id, format=None):
+        user = User.objects.get(id = user_id)
+        presessions = Presession.objects.filter(user = user, result = 1)
+        picked_problems = []
+        for presession in presessions:
+            picked_problems.append(presession.problem)
+        serializer = ProblemSerializer(picked_problems, many=True)
+        
+        return Response(serializer.data)
+
+class GetUserSubmittedSolutionDistributions(APIView):
+    def get(self, request, user_id, format=None):
+        user = User.objects.get(id = user_id)
+        presessions = Presession.objects.filter(user = user, result = 1)
+        picked_problems = []
+        for presession in presessions:
+            picked_problems.append(presession.problem)
+        distributions = []
+        for picked_problem in picked_problems:
+            distributions.append(Distribution.objects.get(problem = picked_problem))
         serializer = DistributionSerializer(distributions, many=True)
         return Response(serializer.data)
