@@ -210,6 +210,7 @@ class GetUserSubmittedSolutionDistributions(APIView):
             picked_problems.append(presession.problem)
         distributions = []
         for picked_problem in picked_problems:
-            distributions.append(Distribution.objects.get(problem = picked_problem))
+            if (picked_problem.status == 2):
+                distributions.append(Distribution.objects.get(problem = picked_problem))
         serializer = DistributionSerializer(distributions, many=True)
         return Response(serializer.data)
