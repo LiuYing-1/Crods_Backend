@@ -83,3 +83,10 @@ class UpdateSolution(APIView):
             return Response({'solution': serializer.data, 'status': 201})
         else:
             return Response({'errors': serializer.errors, 'status': 400})
+        
+# Get All Solutions
+class GetAllSolutions(APIView):
+    def get(self, request):
+        solutions = Solution.objects.all()
+        serializer = SolutionSerializer(solutions, many=True)
+        return Response(serializer.data)

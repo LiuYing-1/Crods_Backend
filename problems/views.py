@@ -163,6 +163,13 @@ class problemUpdate(APIView):
             return Response({'status':200, 'message':'Problem Successfully Updated', 'problem':serializer.data})
         return Response(serializer.errors, status=400)
 
+# Draw Charts for Admin
+class GetAllProblems(APIView):
+    def get(self, request, format=None):
+        problems = Problem.objects.all()
+        serializer = ProblemSerializer(problems, many=True)
+        return Response(serializer.data)
+
 
 # Search Problems
 @api_view(['POST'])

@@ -11,4 +11,6 @@ urlpatterns = [
     path('solutions/problem/<int:problem_id>/', views.GetSolutionByProblemId.as_view()),
     # Update Solution
     path('solutions/solution/<int:solution_id>/update/', views.UpdateSolution.as_view()),
+    # Get All Solutions
+    path('all-solutions/', views.GetAllSolutions.as_view()),
 ]
