@@ -1,6 +1,35 @@
 {% extends "admin/base.html" %}
 
-{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+{% block extrahead %}
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+Display" rel="stylesheet" type="text/css">
+    <style>
+        body, input, textarea, select {
+            font-family: 'Noto Serif Display', serif;
+        }
+
+        #header {
+            background-color: #363636;
+        }
+
+        #content h1{
+            color: black;
+        }
+        
+        table th a:link, table th a:visited {
+            color: #4a4a4a;
+        }
+        
+        div.breadcrumbs {
+            background: darkgrey;
+        }
+
+        .module h2, .module caption {
+            background-color: #616161;
+        }
+    </style>
+{% endblock %}
+
+{% block title %} Super Admin | FlyMeCrods {% endblock %}
 
 {% block branding %}
 <h1 id="site-name"><a href="{% url 'admin:index' %}">FlyMeCrods Administration</a></h1>
