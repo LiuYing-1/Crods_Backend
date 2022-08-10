@@ -30,4 +30,4 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # Set ViewSite in Django Admin to FlyMeCrods
-admin.site.site_url = 'http://101.132.115.77:80'
+admin.site.site_url = settings.FRONTEND_PORTAL

@@ -4,6 +4,7 @@ from PIL import Image
 from django.db import models
 from django.core.files import File
 from django.contrib.auth.models import User
+from django.conf import settings
 
 # Create your models here.
 class Tag(models.Model):
@@ -47,18 +48,18 @@ class Problem(models.Model):
     
     def get_image(self):
         if self.image:
-            return 'http://101.132.115.77:8001' + self.image.url
+            return settings.BACKEND_PORTAL + self.image.url
         return ''
     
     def get_thumbnail(self):
         if self.thumbnail:
-            return 'http://101.132.115.77:8001' + self.thumbnail.url
+            return settings.BACKEND_PORTAL + self.thumbnail.url
         else:
             if self.image:
                 self.thumbnail = self.make_thumbnail(self.image)
                 self.save()
                 
-                return 'http://101.132.115.77:8001' + self.thumbnail.url
+                return settings.BACKEND_PORTAL + self.thumbnail.url
             else:
                 return ''
             
